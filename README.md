@@ -44,8 +44,8 @@ for i in  range(n):
 ```
 
 ## Output:
-![OUTPUT](./images/Screenshot%20from%202023-01-14%2017-16-20.png)
-![OUTPUT](./images/Screenshot%20from%202023-01-14%2017-16-46.png)
+![output](./images/Screenshot%20from%202023-01-14%2017-16-20.png)
+![output](./images/Screenshot%20from%202023-01-14%2017-16-46.png)
 
 
 ## Result:
