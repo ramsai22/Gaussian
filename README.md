@@ -15,9 +15,11 @@ To write a program to find the solution of a matrix using Gaussian Elimination.
 
 ## Program:
 ```
-Program to solve a matrix using Gaussian elimination with partial pivoting.
-Developed by: KAVINRAJA D
-RegisterNumber: 22007928
+
+'''Program to solve a matrix using Gaussian elimination without partial pivoting.
+Developed by: paida ram sai
+RegisterNumber: 23007931
+'''
 import numpy as np
 import sys
 n=int(input())
@@ -25,7 +27,7 @@ a=np.zeros((n,n+1))
 x=np.zeros(n)
 for i in range(n):
     for j in range(n+1):
-        a[i][j]=float(input())
+        a[i][j] = float(input())
 for i in range(n):
     if a[i][i]==0.0:
         sys.exit('Divide by zero detected!')
@@ -39,14 +41,15 @@ for i in range(n-2,-1,-1):
     for j in range(i+1,n):
         x[i]=x[i]-a[i][j]*x[j]
     x[i]=x[i]/a[i][i]
-for i in  range(n):
-    print('X%d = %0.2f'%(i,x[i]),end = ' ') 
+for i in range(n):
+    print('X%d = %0.2f'%(i,x[i]), end=' ')
 ```
 
 ## Output:
-![Output](./images/Screenshot%20from%202023-01-14%2017-16-20.png)
-![Output](./images/Screenshot%20from%202023-01-14%2017-16-46.png)
 
+![Screenshot 2023-12-15 211831](https://github.com/ramsai22/Gaussian/assets/150319855/d2a0b465-2012-4cdf-8797-e05c55dab192)
+
+![Screenshot 2023-12-15 211851](https://github.com/ramsai22/Gaussian/assets/150319855/840a28e2-00af-4604-8c9e-3ce57e0a8a49)
 
 ## Result:
 Thus the program to find the solution of a matrix using Gaussian Elimination is written and verified using python programming.
